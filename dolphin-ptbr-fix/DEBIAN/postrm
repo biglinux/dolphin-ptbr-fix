@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=dolphin-ptbr-fix
+case "$1" in
+  remove)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo"
+    ;;
+  purge)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo"
+;;
+esac
+exit 0

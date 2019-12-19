@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=dolphin-ptbr-fix
+mkdir -p "/usr/share/dpkgdivert/dolphin-ptbr-fix"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/dolphin-ptbr-fix/usrsharelocalept_BRLC_MESSAGESdolphin.mo" --rename "/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/dolphin-ptbr-fix/usrsharelocalept_BRLC_MESSAGESdolphin.mo" --rename "/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo"
+fi
+;;
+esac
+exit 0
