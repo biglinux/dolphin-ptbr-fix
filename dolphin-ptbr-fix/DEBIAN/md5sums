@@ -1,7 +1,7 @@
-8a5206ff5fec1ce81c6e48c53e530e37  DEBIAN/control
 675f582d7834be12f98f458215be4150  DEBIAN/dpkg-divert
 37c8947dc5e803b5d2d9698e5fe7f514  DEBIAN/preinst
 14b5a710b44ab7a72cec8b7d3af54942  DEBIAN/postrm
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-0c870c84c1597fa47fd5fc49d109be45  usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo
-fa9c5b43c30f41f0a0194f1ab3a881ee  usr/share/locale/pt_BR/LC_MESSAGES/dolphin.po
+e5dddd047c5bece58296020bceebf590  DEBIAN/control
+135dbc840abfe4943fab58279cad8888  usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo
+2854ca4eb293176d9b5d93bf1ea31394  usr/share/locale/pt_BR/LC_MESSAGES/dolphin.po
